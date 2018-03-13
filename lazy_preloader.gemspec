@@ -9,9 +9,8 @@ Gem::Specification.new do |s|
   s.version     = LazyPreloader::VERSION
   s.authors     = ["Lachlan Sylvester"]
   s.email       = ["lachlan.sylvester@publicisfrontfoot.com.au"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of LazyPreloader."
-  s.description = "TODO: Description of LazyPreloader."
+  s.homepage    = "https://github.com/lsylvester/lazy_preloader"
+  s.summary     = "Defers ActiveRecord preloading when using multifetch caching"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
@@ -19,4 +18,7 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 5.2.0.rc1"
 
   s.add_development_dependency "sqlite3"
+  s.add_development_dependency "faker"
+  s.add_development_dependency "dalli"
+
 end
